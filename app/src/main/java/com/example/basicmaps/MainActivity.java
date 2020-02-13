@@ -36,6 +36,9 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     EditText editTextLocalizacao;
     Button buttonEnviarLocalizacao;
 
+    LatLng coordenadas;
+    Double latitude, longitude;
+
     private String []permissoes = new String[]{
         Manifest.permission.ACCESS_FINE_LOCATION
     };
@@ -57,9 +60,12 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
         Permissoes.validarPermissoes(permissoes, this, 1);
 
-        String t = editTextLocalizacao.getText().toString();
-
-
+        buttonEnviarLocalizacao.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                salvaLocalizacaoUsuario();
+            }
+        });
 
     }
 
@@ -76,9 +82,6 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     public void onMapReady(GoogleMap googleMap) {
 
         mMap = googleMap;
-
-
-
         recuperaLocalizacaoUsuario();
     }
 
@@ -108,18 +111,49 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
 
     }
 
+    private void salvaLocalizacaoUsuario(){
+
+        if(latitude !=  -22.7388) {
+
+            if (longitude != -47.3319) {
+
+                try {
+                    LocalizacaoDoUsuario localizacaoDoUsuario = new LocalizacaoDoUsuario();
+                    localizacaoDoUsuario.setLatitude(String.valueOf(coordenadas.latitude));
+                    localizacaoDoUsuario.setLongitude(String.valueOf(coordenadas.longitude));
+                    localizacaoDoUsuario.setUsuario("Danilo");
+                    localizacaoDoUsuario.salvaLocalizacao();
+                } catch (Exception ex) {
+                    ex.printStackTrace();
+                    Toast.makeText(this, ex.toString(), Toast.LENGTH_SHORT).show();
+                }
+
+            } else {
+                String mens = "Aguarde até que o mapa seja totalmente atualizado!";
+                Toast.makeText(this, mens, Toast.LENGTH_SHORT).show();
+            }
+
+        }else{
+            String mens = "Aguarde até que o mapa seja totalmente atualizado!";
+            Toast.makeText(this, mens, Toast.LENGTH_SHORT).show();
+        }
+
+    }
+
 
     private void recuperaLocalizacaoUsuario() {
 
         locationManager = (LocationManager) this.getSystemService(Context.LOCATION_SERVICE);
 
+
         locationListener = new LocationListener() {
             @Override
             public void onLocationChanged(Location location) {
 
-                Double latitude = location.getLatitude();
-                Double longitude = location.getLongitude();
-                LatLng coordenadas = new LatLng(latitude, longitude);
+                latitude = location.getLatitude();
+                longitude = location.getLongitude();
+
+                coordenadas = new LatLng(latitude, longitude);
 
                 String posicao = "Lat: " + String.valueOf(latitude) + " - Long: " + String.valueOf(longitude);
                 editTextLocalizacao.setText(posicao);
@@ -154,7 +188,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         };
 
         if (ActivityCompat.checkSelfPermission(this, Manifest.permission.ACCESS_FINE_LOCATION) == PackageManager.PERMISSION_GRANTED){
-            locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 1000, 3, locationListener);
+            locationManager.requestLocationUpdates(LocationManager.GPS_PROVIDER, 10000, 10, locationListener);
         }
 
 

@@ -1,0 +1,233 @@
+{
+  "project_info": {
+    "project_number": "479374318596",
+    "firebase_url": "https://uber-a40cb.firebaseio.com",
+    "project_id": "uber-a40cb",
+    "storage_bucket": "uber-a40cb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:479374318596:android:863f7721c03a53e39f6951",
+        "android_client_info": {
+          "package_name": "com.danilo.dionisia.resgateapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "479374318596-dcn6featnl36cm8799vroiuascnlgfnv.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.danilo.dionisia.resgateapp",
+            "certificate_hash": "7db12fc70d7ffd3ce74734260f241d7d6f7c2ef7"
+          }
+        },
+        {
+          "client_id": "479374318596-h84o2d34117s45b6riggtmjtum1u081q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJ2Ym3axKo_3VZH-Tija1IUvNFV3QG5pY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "479374318596-h84o2d34117s45b6riggtmjtum1u081q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:479374318596:android:9a5e9b304591bec09f6951",
+        "android_client_info": {
+          "package_name": "com.example.basicmaps"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "479374318596-m3o27m80dan3p4fv2737l8vic93ugpe0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.basicmaps",
+            "certificate_hash": "1a556d7beda015042ea7c10722d26f760548feb7"
+          }
+        },
+        {
+          "client_id": "479374318596-h84o2d34117s45b6riggtmjtum1u081q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJ2Ym3axKo_3VZH-Tija1IUvNFV3QG5pY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "479374318596-h84o2d34117s45b6riggtmjtum1u081q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:479374318596:android:6c492ae96fa8a2939f6951",
+        "android_client_info": {
+          "package_name": "com.example.projetointegrador"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "479374318596-fmdb327lsc8onie843u6st9ult88fd2t.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.projetointegrador",
+            "certificate_hash": "e9c42f95530794abfd91833158aa27a899cd5d89"
+          }
+        },
+        {
+          "client_id": "479374318596-h84o2d34117s45b6riggtmjtum1u081q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJ2Ym3axKo_3VZH-Tija1IUvNFV3QG5pY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "479374318596-h84o2d34117s45b6riggtmjtum1u081q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:479374318596:android:9ed30ad5470547849f6951",
+        "android_client_info": {
+          "package_name": "com.example.teste28_01_20"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "479374318596-7bbo2q5abog7s4lpo3pn63fqg90p2qgq.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.teste28_01_20",
+            "certificate_hash": "e9c42f95530794abfd91833158aa27a899cd5d89"
+          }
+        },
+        {
+          "client_id": "479374318596-h84o2d34117s45b6riggtmjtum1u081q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJ2Ym3axKo_3VZH-Tija1IUvNFV3QG5pY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "479374318596-h84o2d34117s45b6riggtmjtum1u081q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:479374318596:android:5f98e010a31d6eea9f6951",
+        "android_client_info": {
+          "package_name": "com.example.uber"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "479374318596-oh5s4psgqjk7ontmj0frga0j13pkbplu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.uber",
+            "certificate_hash": "dc2d4596c73231453ef0f2defec7605fe56f072b"
+          }
+        },
+        {
+          "client_id": "479374318596-h84o2d34117s45b6riggtmjtum1u081q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJ2Ym3axKo_3VZH-Tija1IUvNFV3QG5pY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "479374318596-h84o2d34117s45b6riggtmjtum1u081q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:479374318596:android:91eca77d986e3cc69f6951",
+        "android_client_info": {
+          "package_name": "com.example.uber2"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "479374318596-lj7csmr2mjs6g5stli21on92vj5chcjn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.uber2",
+            "certificate_hash": "dc2d4596c73231453ef0f2defec7605fe56f072b"
+          }
+        },
+        {
+          "client_id": "479374318596-h84o2d34117s45b6riggtmjtum1u081q.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCJ2Ym3axKo_3VZH-Tija1IUvNFV3QG5pY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "479374318596-h84o2d34117s45b6riggtmjtum1u081q.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
