@@ -14,7 +14,7 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         android:layout_marginBottom="16dp"
-        android:background="@color/colorPrimary"
+        android:background="@android:color/holo_orange_dark"
         android:text="Enviar localização"
         android:textColor="@color/common_google_signin_btn_text_dark_default" />
 

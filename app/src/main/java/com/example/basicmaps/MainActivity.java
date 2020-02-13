@@ -8,7 +8,10 @@ import android.location.Location;
 import android.location.LocationListener;
 import android.location.LocationManager;
 import android.os.Bundle;
+import android.view.View;
+import android.widget.Button;
 import android.widget.EditText;
+import android.widget.Toast;
 
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -31,6 +34,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     private LocationManager locationManager;
     private LocationListener locationListener;
     EditText editTextLocalizacao;
+    Button buttonEnviarLocalizacao;
 
     private String []permissoes = new String[]{
         Manifest.permission.ACCESS_FINE_LOCATION
@@ -49,8 +53,13 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
         mapFragment.getMapAsync(this);
 
         editTextLocalizacao = findViewById(R.id.editTextLocalizacao);
+        buttonEnviarLocalizacao = findViewById(R.id.buttonLocalizacao);
 
         Permissoes.validarPermissoes(permissoes, this, 1);
+
+        String t = editTextLocalizacao.getText().toString();
+
+
 
     }
 
@@ -67,6 +76,8 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
     public void onMapReady(GoogleMap googleMap) {
 
         mMap = googleMap;
+
+
 
         recuperaLocalizacaoUsuario();
     }
@@ -122,7 +133,7 @@ public class MainActivity extends AppCompatActivity implements OnMapReadyCallbac
                                 .icon(BitmapDescriptorFactory.fromResource(R.drawable.man_sick))
                 );
 
-                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(coordenadas, 17));
+                mMap.moveCamera(CameraUpdateFactory.newLatLngZoom(coordenadas, 18));
 
             }
 
